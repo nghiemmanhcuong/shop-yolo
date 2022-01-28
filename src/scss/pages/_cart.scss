@@ -1,0 +1,105 @@
+.cart {
+    @include flex(flex-start, flex-start);
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        margin-top: 30px;
+        margin-right: 30px;
+        position: sticky;
+        box-shadow: $box-shadow;
+        top: calc(#{header-shrink-height} + 20px);
+        padding: 20px;
+
+        @include mobile {
+            position:unset;
+            margin-right: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        &__text {
+            & > * {
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+
+            &__price {
+                @include flex(center, space-between);
+                font-size: 1.25rem;
+                padding: 10px 0;
+
+                span:nth-child(2) {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: $main-color;
+                }
+            }
+        }
+        
+        &__btn > * {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        flex-grow: 1;
+    }
+
+    &__item {
+        @include flex(center, flex-start);
+        margin-bottom: 20px;
+
+        &__image {
+            margin-right: 20px;
+
+            img {
+                height: 150px;
+            }
+        }
+
+        &__info {
+            @include flex(center, space-between);
+            flex: 1;
+
+            @include mobile {
+                @include flex(flex-start, center);
+                flex-direction: column;
+
+                & > * {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__name {
+                width: 40%;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+
+            &__name,
+            &__price {
+                font-size: 1.25rem;
+            }
+
+            &__del {
+                font-size: 1.5rem;
+
+                i {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

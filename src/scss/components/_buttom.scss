@@ -1,0 +1,51 @@
+.btn {
+    outline:none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    color: $btn-main-color;
+
+    &__text,&__icon {
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    &__text {
+        padding: 1rem 2rem;
+    }
+
+    &__icon {
+        font-size: 2rem;
+        transform: translateX(-100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        @include flex(center,center);
+    }
+
+    &-animate:hover &__text {
+        transform: translateX(100%)
+    }
+
+    &-animate:hover &__icon {
+        transform: translateX(0)
+    }
+
+    &-sm {
+        font-size: 1rem;
+    }
+
+    &-sm &__text {
+        padding: 0.7rem 1.5rem;
+    }
+
+    &-block {
+        width: 100%;
+    }
+}
