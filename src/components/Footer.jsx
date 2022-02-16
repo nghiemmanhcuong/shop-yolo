@@ -5,34 +5,34 @@ import {Link} from 'react-router-dom';
 const footerAboutLinks = [
     {
         display: 'Giới Thiệu',
-        path: '/about',
+        path: '/shop-yolo/about',
     },
     {
         display: 'Liên Hệ',
-        path: '/about',
+        path: '/shop-yolo/about',
     },
     {
         display: 'Tin Tức',
-        path: '/about',
+        path: '/shop-yolo/about',
     },
     {
         display: 'Hệ Thống Của Hàng',
-        path: '/about',
+        path: '/shop-yolo/about',
     },
 ];
 
 const footerCustomerLinks = [
     {
         display: 'Chính sách bảo hành',
-        path: '/about',
+        path: '/shop-yolo/about',
     },
     {
         display: 'Chính sách đổi trả',
-        path: '/about',
+        path: '/shop-yolo/about',
     },
     {
         display: 'Chính sách hoàn tiền',
-        path: '/about',
+        path: '/shop-yolo/about',
     },
 ];
 
@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>
                     <div className='footer__about'>
                         <p>
-                            <Link to='/'>
+                            <Link to='/shop-yolo/'>
                                 <img className='footer__logo' src={logo} alt='' />
                             </Link>
                         </p>

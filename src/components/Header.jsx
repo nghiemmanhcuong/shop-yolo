@@ -5,19 +5,19 @@ import {Link, useLocation} from 'react-router-dom';
 const mainNav = [
     {
         display: 'Trang Chủ',
-        path: '/',
+        path: '/shop-yolo/',
     },
     {
         display: 'Sản Phẩm',
-        path: '/catalog',
+        path: '/shop-yolo/catalog',
     },
     {
         display: 'Phụ Kiện',
-        path: '/accessories',
+        path: '/shop-yolo/accessories',
     },
     {
         display: 'Liên Hệ',
-        path: '/contact',
+        path: '/shop-yolo/contact',
     },
 ];
 
@@ -46,7 +46,7 @@ const Header = () => {
         <div ref={headerRef} className='header'>
             <div className='container'>
                 <div className='header__logo'>
-                    <Link to='/'>
+                    <Link to='/shop-yolo/'>
                         <img src={logo} alt='logo image' />
                     </Link>
                 </div>
@@ -77,7 +77,7 @@ const Header = () => {
                             <i className='bx bx-search'></i>
                         </div>
                         <div className='header-menu-right__item header-menu__item'>
-                            <Link to='/cart'>
+                            <Link to='/shop-yolo/cart'>
                                 <i className='bx bx-shopping-bag'></i>
                             </Link>
                         </div>

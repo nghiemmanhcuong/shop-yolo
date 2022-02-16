@@ -38,7 +38,7 @@ const CartItem = (props) => {
             </div>
             <div className='cart__item__info'>
                 <div className='cart__item__info__name'>
-                    <Link to={`/category/${item.slug}`}>
+                    <Link to={`/shop-yolo/category/${item.slug}`}>
                         {item.product.title} - {item.color} - {item.size}
                     </Link>
                 </div>

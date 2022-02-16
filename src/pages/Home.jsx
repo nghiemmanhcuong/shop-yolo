@@ -20,7 +20,7 @@ const Home = () => {
                 <SectionBody>
                     <Grid col={4} mdCol={2} smCol={1} gap={20}>
                         {policy.map((item, index) => (
-                            <Link to='policy' key={index}>
+                            <Link to='/shop-yolo/policy' key={index}>
                                 <PolicyCart
                                     name={item.name}
                                     description={item.description}
@@ -67,7 +67,7 @@ const Home = () => {
             </Section>
             <Section>
                 <SectionBody>
-                    <Link to='/catalog'>
+                    <Link to='/shop-yolo/catalog'>
                         <img src={banner} alt='web banner' />
                     </Link>
                 </SectionBody>

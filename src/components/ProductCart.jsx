@@ -11,7 +11,7 @@ const ProductCart = (props) => {
 
     return (
         <div className='product-card'>
-            <Link to={`/catalog/${props.slug}`}>
+            <Link to={`/shop-yolo/catalog/${props.slug}`}>
                 <div className='product-card__image'>
                     <img src={props.img01} alt='product image!' />
                     <img src={props.img02} alt='product image!' />

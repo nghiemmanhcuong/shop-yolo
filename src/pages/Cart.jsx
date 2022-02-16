@@ -39,7 +39,7 @@ const Cart = () => {
                     </div>
                     <div className='cart__info__btn'>
                         <Button size='block'>đặt Hàng</Button>
-                        <Link to='/catalog'>
+                        <Link to='/shop-yolo/catalog'>
                             <Button size='block'>tiếp tục mua sắm</Button>
                         </Link>
                     </div>
